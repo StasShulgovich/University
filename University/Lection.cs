@@ -5,8 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace University
-{
-    class Lection
+{ enum LectionType
     {
+        Technician,
+        Humanitarian
+    }
+    class Lection
+    {        
+      public string LectionName { get; set; }
+      public LectionType Type { get; set; }
+        
     }
 }

@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace University
 {
-    class Student
+     abstract class Student : Human
     {
+        public Student(string firstName, string lastName) : base (firstName, lastName)
+        {
+
+        }
+
+        public abstract void Study();
+
+
     }
 }
